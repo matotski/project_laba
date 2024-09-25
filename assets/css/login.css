@@ -1,0 +1,138 @@
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url(../fonts/Nunito-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../fonts/Nunito-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url(../fonts/Nunito-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Nunito-ExtraBold;
+  src: url(../fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #2972ff;
+}
+
+body {
+  font-family: Nunito-Bold;
+  font-size: 24px;
+}
+
+.login {
+  display: flex;
+}
+.login__image {
+  width: 50%;
+  height: 100vh;
+  background: url(../img/login.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 24px;
+}
+.login__text {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 7.6px;
+  margin-bottom: 115px;
+}
+.login__text h1 {
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.login__registration {
+  width: 50%;
+}
+.login__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 182px;
+  padding-top: 52px;
+  padding-right: 44px;
+  margin-bottom: 150px;
+}
+.login__content {
+  text-align: center;
+  letter-spacing: 7.6px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.login__content h4 {
+  font-size: 24px;
+}
+.login__content p {
+  font-size: 24px;
+}
+.login__social-medias {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+}
+.login__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid rgb(65, 65, 65);
+  font-family: Nunito-Bold;
+  font-size: 24px;
+  border-radius: 8px;
+  width: 401px;
+  margin-left: 159px;
+  background-color: #fff;
+  margin-bottom: 263px;
+  cursor: pointer;
+}
+.login__button:active {
+  background-color: #7a7878;
+}
+.login__social__button {
+  border: 1px solid rgb(65, 65, 65);
+  padding: 4px 26px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.login__social__button:active {
+  background-color: #7a7878;
+}
+.login__bottom {
+  border-top: 1px solid rgb(65, 65, 65);
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.cross-link {
+  transition: 0.1s ease-in-out;
+}
+.cross-link:hover {
+  cursor: pointer;
+  background-color: #7a7878;
+  padding: 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,429 @@
+$base_color: #f2c375;
+
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url(../fonts/Nunito-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../fonts/Nunito-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url(../fonts/Nunito-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Nunito-ExtraBold;
+  src: url(../fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito-Regular;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+    &:active{
+      color: $base_color;
+    }
+}
+
+// li {
+//   list-style: none;
+// }
+
+.btn {
+  background-color: $base_color;
+  color: #000;
+  padding: 16px 18px;
+  font-family: Nunito-Bold;
+  font-size: 10px;
+  border: $base_color;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0px 51px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #111111;
+  &-wrap {
+    img {
+      display: block;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: #fff;
+      font-family: Nunito-Bold;
+      font-size: 10px;
+
+      &:active{
+        color: $base_color;
+      }
+    }
+  }
+
+  &__nav {
+    &__list {
+      display: flex;
+      gap: 21px;
+    }
+  }
+
+  &__button {
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      scale: (1.05);
+
+      box-shadow: 4px 4px 0 #fff;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+}
+
+.main {
+  background: url(../img/main-bg.png) no-repeat center center / cover;
+  margin-bottom: 73px;
+  &-wrap {
+    display: flex;
+    padding: 208px 70px 208px 70px;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 497px;
+    gap: 25px;
+
+    h1 {
+      color: #fff;
+      font-size: 44px;
+      font-family: Nunito-Bold;
+    }
+  }
+
+  &__button {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 32px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      scale: (1.05);
+
+    }
+  }
+}
+
+.goals {
+  h2 {
+    font-family: Nunito-ExtraBold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 73px;
+  }
+
+  &__memos {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 219px;
+    margin-right: 38px;
+  }
+
+  &__memo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 27px;
+    padding-top: 45px;
+    box-shadow: 10px 10px 0 #000;
+    ul {
+      width: 363px;
+    }
+    h4 {
+      font-family: Nunito-SemiBold;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 21px;
+    }
+    li {
+      color: #656565;
+      text-transform: none;
+      letter-spacing: 0;
+      font-family: Nunito-SemiBold;
+      font-size: 21px;
+    }
+
+    &_green {
+      background-color: #91e99f;
+    }
+
+    &_orange {
+      background-color: $base_color;
+    }
+
+    &_purple {
+      background-color: #c275f2;
+    }
+  }
+}
+
+.popular {
+  background-color: #000;
+  padding: 90px 0;
+  &__title {
+    color: #fff;
+    font-family: Nunito-ExtraBold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__cards {
+    display: flex;
+
+    gap: 91px;
+  }
+  &__card {
+    letter-spacing: 0;
+
+    background-color: #fff;
+    border-radius: 15px;
+
+    &__img {
+      margin-bottom: 18px;
+      img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+
+    &__content {
+      padding: 0px 17px 13px 17px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__title {
+      max-width: 231px;
+      h4 {
+        font-family: Nunito-ExtraBold;
+        font-size: 16px;
+      }
+
+      &_margin {
+        margin-bottom: 44px;
+      }
+    }
+
+    &__subtitle {
+      max-width: 238px;
+      p {
+        color: #656565;
+      }
+    }
+
+    &__author {
+      text-transform: none;
+      p {
+        span {
+          font-family: Nunito-Bold;
+        }
+      }
+    }
+
+    &__price {
+      font-family: Nunito-Bold;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      &_line-through {
+        font-size: 16px;
+        text-decoration: line-through;
+      }
+
+      &_orange {
+        text-decoration: none;
+        color: $base_color;
+        font-size: 24px;
+      }
+    }
+
+    &__rating {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      p {
+        color: #656565;
+      }
+    }
+
+    &__time {
+      display: flex;
+      gap: 9px;
+      p {
+        text-transform: none;
+        color: #656565;
+      }
+    }
+  }
+}
+
+.feedback {
+  background-color: #656565;
+  padding: 45px 0;
+  &__title {
+    color: #000;
+    font-family: Nunito-ExtraBold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 106px;
+    row-gap: 45px;
+  }
+
+  &__review {
+    background-color: #fff;
+    padding: 34px 28px;
+
+    &__info {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 17px;
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    &__content {
+      text-align: center;
+      text-transform: none;
+      font-size: 24px;
+    }
+
+    &_1 {
+      padding: 13px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+
+&-wrap{
+margin: 127px 0;
+display: flex;
+justify-content: space-between;
+
+}
+
+  &__list {
+    font-size: 24px;
+    list-style: none;
+    letter-spacing: 0;
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 24px;
+
+    a{
+      color: #000;
+      &:active{
+        color: $base_color;
+      }
+    }
+  }
+  &__title {
+    font-family: Nunito-Bold;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input{
+      font-family: Nunito-ExtraLight;
+      font-size: 24px;
+      padding: 6px 9px 6px 9px;
+    }
+    input::placeholder{
+      font-family: Nunito-ExtraLight;
+      color: #b2b2b2;
+      font-size: 24px;
+    }
+    label{
+      font-family: Nunito-Bold;
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: 24px;
+    }
+  }
+
+  &__button{
+    color: #fff;
+    background-color: #000;
+    padding: 18px 167px;
+
+    
+  }
+
+  &-bottom{
+
+    display: flex;
+    align-items: center;
+    gap: 336px;
+  }
+}
+
